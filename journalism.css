@@ -1,0 +1,14 @@
+div{
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+#correct{
+  background-color:green;
+}
+#almost{
+  background-color:gray;
+}
+#wrong{
+  background-color:red;
+}
