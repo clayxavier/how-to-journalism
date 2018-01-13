@@ -1,14 +1,30 @@
-div{
+/* div{
   border-style: solid;
   border-color: black;
   border-width: 1px;
-}
+} */
 #correct{
-  background-color:green;
-}
-#almost{
   background-color:gray;
 }
+#correct:active{
+  background-color:green;
+}
+#correct:hover{
+  box-shadow: 4px 4px 4px #4a525a ;
+}
 #wrong{
+  background-color:gray;
+}
+#wrong:active{
   background-color:red;
+}
+#wrong:hover{
+  box-shadow: 4px 4px 4px #4a525a ;
+}
+#titleRow{
+  background-image:url(https://cdn.pixabay.com/photo/2017/08/12/10/13/background-2633962_960_720.jpg)
+}
+.header-image{
+  background-image:url(https://cdn.pixabay.com/photo/2017/08/17/13/33/business-2651346_960_720.jpg);
+
 }
