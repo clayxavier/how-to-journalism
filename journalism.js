@@ -6,23 +6,24 @@ $(document).ready(function() {
 });
 
 
-//Correct scripts
+//Correct scripts, determines if question was answered correctly
 
 $("#questionOne").find('#correct').one( 'click', (function() {
 		console.log("Correct clicked!");
-		$("#questionOne").find("#wrong").hide();
-		$("#inner1").append("Answer correct!");
+		$("#inner1").replaceWith("Answer correct! ");
+		$("#questionOne").find('#correct').css("background-color","green");
 		$("#questionTwo").show();
 		$('html, body').animate({
 	        scrollTop: $("#questionTwo").offset().top
-	    }, 500);}
+	    }, 500);
+				}
 	    )
 	);
 
 $("#questionTwo").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
-	$("#questionTwo").find("#wrong").hide();
-	$("#inner2").append("Answer correct!");
+	$("#inner2").replaceWith("Answer correct! ");
+	$("#questionTwo").find('#correct').css("background-color","green");
 	$("#questionThree").show();
 	$('html, body').animate({
         scrollTop: $("#questionThree").offset().top
@@ -31,8 +32,8 @@ $("#questionTwo").find('#correct').one( 'click', (function() {
 
 $("#questionThree").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
-	$("#inner3").append("Answer correct!");
-	$("#questionThree").find("#wrong").hide();
+	$("#inner3").replaceWith("Answer correct! ");
+	$("#questionThree").find('#correct').css("background-color","green");
 	$("#questionFour").show();
 	$('html, body').animate({
         scrollTop: $("#questionFour").offset().top
@@ -41,8 +42,8 @@ $("#questionThree").find('#correct').one( 'click', (function() {
 
 $("#questionFour").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
-	$("#questionFour").find("#wrong").hide();
-	$("#inner4").append("Answer correct!");
+	$("#inner4").replaceWith("Answer correct! ");
+	$("#questionFour").find('#correct').css("background-color","green");
 	$("#questionFive").show();
 	$('html, body').animate({
         scrollTop: $("#questionFive").offset().top
@@ -51,8 +52,8 @@ $("#questionFour").find('#correct').one( 'click', (function() {
 
 $("#questionFive").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
-	$("#questionFive").find("#wrong").hide();
-	$("#inner5").append("Answer correct!");
+	$("#inner5").replaceWith("Answer correct! ");
+	$("#questionFive").find('#correct').css("background-color","green");
 	$("#questionSix").show();
 	$('html, body').animate({
         scrollTop: $("#questionSix").offset().top
@@ -61,8 +62,8 @@ $("#questionFive").find('#correct').one( 'click', (function() {
 
 $("#questionSix").find('#correct').one ( 'click', (function() {
 	console.log("Correct clicked!");
-	$("#questionSix").find("#wrong").hide();
-	$("#inner6").append("Answer correct!");
+	$("#inner6").replaceWith("Answer correct! ");
+	$("#questionSix").find('#correct').css("background-color","green");
 	$("#questionSeven").show();
 	$('html, body').animate({
         scrollTop: $("#questionSeven").offset().top
@@ -71,8 +72,8 @@ $("#questionSix").find('#correct').one ( 'click', (function() {
 
 $("#questionSeven").find('#correct').one ( 'click', (function() {
 	console.log("Correct clicked!");
-	$("#questionSeven").find("#wrong").hide();
-	$("#inner7").append("Answer correct!");
+	$("#inner7").replaceWith("Answer correct!" );
+	$("#questionSeven").find('#correct').css("background-color","green");
 	$("#questionEight").show();
 	$('html, body').animate({
         scrollTop: $("#questionEight").offset().top
@@ -81,100 +82,68 @@ $("#questionSeven").find('#correct').one ( 'click', (function() {
 
 $("#questionEight").find('#correct').one ( 'click', (function() {
 	console.log("Correct clicked!");
-	$("#questionEight").find("#wrong").hide();
-	$("#inner8").append("Answer correct!");
+	$("#inner8").replaceWith("Answer correct! ");
+	$("#questionEight").find('#correct').css("background-color","green");
 	$("#final").show();
 	$('html, body').animate({
         scrollTop: $("#final").offset().top
     }, 500);
 }));
 
-//Incorrect scripts
+//Incorrect scripts, determines if question was answered incorrectly
 
 $("#questionOne").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionOne").find("#correct").hide();
-		$("#inner1").append("Wrong answer!");
-		$("#questionTwo").show();
-		$('html, body').animate({
-	        scrollTop: $("#questionTwo").offset().top
-	    }, 500);}
+		$("#inner1").append("Wrong answer! ");
+				}
 	    )
 	);
 
 $("#questionTwo").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionTwo").find("#correct").hide();
-		$("#inner2").append("Wrong answer!");
-		$("#questionThree").show();
-		$('html, body').animate({
-	        scrollTop: $("#questionThree").offset().top
-	    }, 500);}
+		$("#inner2").append("Wrong answer! ");
+				}
 	    )
 	);
 
 $("#questionThree").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionThree").find("#correct").hide();
-		$("#inner3").append("Wrong answer!");
-		$("#questionFour").show();
-		$('html, body').animate({
-	        scrollTop: $("#questionFour").offset().top
-	    }, 500);}
+		$("#inner3").append("Wrong answer! ");
+				}
 	    )
 	);
 
 $("#questionFour").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionFour").find("#correct").hide();
-		$("#inner4").append("Wrong answer!");
-		$("#questionFive").show();
-		$('html, body').animate({
-	        scrollTop: $("#questionFive").offset().top
-	    }, 500);}
+		$("#inner4").append("Wrong answer! ");
+				}
 	    )
 	);
 
 $("#questionFive").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionFive").find("#correct").hide();
-		$("#inner5").append("Wrong answer!");
-		$("#questionSix").show();
-		$('html, body').animate({
-	        scrollTop: $("#questionSix").offset().top
-	    }, 500);}
+		$("#inner5").append("Wrong answer! ");
+				}
 	    )
 	);
 
 $("#questionSix").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionSix").find("#correct").hide();
-		$("#inner6").append("Wrong answer!");
-		$("#questionSeven").show();
-		$('html, body').animate({
-	        scrollTop: $("#questionSeven").offset().top
-	    }, 500);}
+		$("#inner6").append("Wrong answer! ");
+				}
 	    )
 	);
 
 $("#questionSeven").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionSeven").find("#correct").hide();
-		$("#inner7").append("Wrong answer!");
-		$("#questionEight").show();
-		$('html, body').animate({
-	        scrollTop: $("#questionEight").offset().top
-	    }, 500);}
+		$("#inner7").append("Wrong answer! ");
+				}
 	    )
 	);
 
 $("#questionEight").find('#wrong').one( 'click', (function() {
 		console.log("Wrong clicked!");
-		$("#questionEight").find("#correct").hide();
-		$("#inner8").append("Wrong answer!");
-		$("#final").show();
-		$('html, body').animate({
-	        scrollTop: $("#final").offset().top
-	    }, 500);}
+		$("#inner8").append("Wrong answer! ");
+				}
 	    )
 	);
