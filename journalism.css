@@ -21,10 +21,14 @@
 #wrong:hover{
   box-shadow: 4px 4px 4px #4a525a ;
 }
-#titleRow{
+.titleRow{
   background-image:url(https://cdn.pixabay.com/photo/2017/08/12/10/13/background-2633962_960_720.jpg)
 }
 .header-image{
   background-image:url(https://cdn.pixabay.com/photo/2017/08/17/13/33/business-2651346_960_720.jpg);
 
+}
+
+.answer {
+  display: none;
 }
