@@ -11,7 +11,7 @@ $(document).ready(function() {
 $("#questionOne").find('#correct').one( 'click', (function() {
 		console.log("Correct clicked!");
 		$("#inner1").replaceWith("Answer correct! ");
-		$("#questionOne").find('#correct').css("background-color","green");
+		$("#questionOne").find('#correct').css("background-color","#28a354");
 		$("#questionTwo").show();
 		$('html, body').animate({
 	        scrollTop: $("#questionTwo").offset().top
@@ -23,7 +23,7 @@ $("#questionOne").find('#correct').one( 'click', (function() {
 $("#questionTwo").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
 	$("#inner2").replaceWith("Answer correct! ");
-	$("#questionTwo").find('#correct').css("background-color","green");
+	$("#questionTwo").find('#correct').css("background-color","#28a354");
 	$("#questionThree").show();
 	$('html, body').animate({
         scrollTop: $("#questionThree").offset().top
@@ -33,7 +33,7 @@ $("#questionTwo").find('#correct').one( 'click', (function() {
 $("#questionThree").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
 	$("#inner3").replaceWith("Answer correct! ");
-	$("#questionThree").find('#correct').css("background-color","green");
+	$("#questionThree").find('#correct').css("background-color","#28a354");
 	$("#questionFour").show();
 	$('html, body').animate({
         scrollTop: $("#questionFour").offset().top
@@ -43,7 +43,7 @@ $("#questionThree").find('#correct').one( 'click', (function() {
 $("#questionFour").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
 	$("#inner4").replaceWith("Answer correct! ");
-	$("#questionFour").find('#correct').css("background-color","green");
+	$("#questionFour").find('#correct').css("background-color","#28a354");
 	$("#questionFive").show();
 	$('html, body').animate({
         scrollTop: $("#questionFive").offset().top
@@ -53,7 +53,7 @@ $("#questionFour").find('#correct').one( 'click', (function() {
 $("#questionFive").find('#correct').one( 'click', (function() {
 	console.log("Correct clicked!");
 	$("#inner5").replaceWith("Answer correct! ");
-	$("#questionFive").find('#correct').css("background-color","green");
+	$("#questionFive").find('#correct').css("background-color","#28a354");
 	$("#questionSix").show();
 	$('html, body').animate({
         scrollTop: $("#questionSix").offset().top
@@ -63,7 +63,7 @@ $("#questionFive").find('#correct').one( 'click', (function() {
 $("#questionSix").find('#correct').one ( 'click', (function() {
 	console.log("Correct clicked!");
 	$("#inner6").replaceWith("Answer correct! ");
-	$("#questionSix").find('#correct').css("background-color","green");
+	$("#questionSix").find('#correct').css("background-color","#28a354");
 	$("#questionSeven").show();
 	$('html, body').animate({
         scrollTop: $("#questionSeven").offset().top
@@ -73,7 +73,7 @@ $("#questionSix").find('#correct').one ( 'click', (function() {
 $("#questionSeven").find('#correct').one ( 'click', (function() {
 	console.log("Correct clicked!");
 	$("#inner7").replaceWith("Answer correct!" );
-	$("#questionSeven").find('#correct').css("background-color","green");
+	$("#questionSeven").find('#correct').css("background-color","#28a354");
 	$("#questionEight").show();
 	$('html, body').animate({
         scrollTop: $("#questionEight").offset().top
@@ -83,7 +83,7 @@ $("#questionSeven").find('#correct').one ( 'click', (function() {
 $("#questionEight").find('#correct').one ( 'click', (function() {
 	console.log("Correct clicked!");
 	$("#inner8").replaceWith("Answer correct! ");
-	$("#questionEight").find('#correct').css("background-color","green");
+	$("#questionEight").find('#correct').css("background-color","#28a354");
 	$("#final").show();
 	$('html, body').animate({
         scrollTop: $("#final").offset().top
