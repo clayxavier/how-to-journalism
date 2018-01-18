@@ -1,4 +1,4 @@
-document.getElementById("correct").onClick.classList.add('clicked');
+document.getElementById("correct").onClick.classList.add('');
 
 document.getElementById("MyElement").classList.remove('MyClass');
 

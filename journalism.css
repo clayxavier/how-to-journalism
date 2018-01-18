@@ -4,27 +4,31 @@
   border-width: 1px;
 } */
 #correct{
-  background-color:gray;
+  background-color:#c9d5d8;
+  padding:10px;
 }
 #correct:active{
   background-color:green;
 }
 #correct:hover{
-  box-shadow: 4px 4px 4px #4a525a ;
+  box-shadow: 4px 4px 6px #7b8187 ;
 }
 #wrong{
-  background-color:gray;
+  background-color:#c9d5d8;
+  padding:10px;
 }
 #wrong:active{
   background-color:red;
 }
 #wrong:hover{
-  box-shadow: 4px 4px 4px #4a525a ;
+  box-shadow: 4px 4px 6px #7b8187 ;
 }
 #titleRow{
-  background-image:url(https://cdn.pixabay.com/photo/2017/08/12/10/13/background-2633962_960_720.jpg)
+  background: linear-gradient(-40deg , #2176AE , #57b8ff);
+  margin-top:30px;
+  margin-bottom:30px;
 }
 .header-image{
-  background-image:url(https://cdn.pixabay.com/photo/2017/08/17/13/33/business-2651346_960_720.jpg);
+  background: linear-gradient(-20deg , #46ffc8, #3eff8b);
 
 }
