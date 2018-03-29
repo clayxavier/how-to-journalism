@@ -13,7 +13,59 @@ body{
 #title{
   font-weight:bold;
   font-style: italic;
-  font-size:2rem;
+  font-size:5vw;
+}
+.btn-outline-light{
+  border:2px solid #FCF7F1;
+  color:#FCF7F1;
+}
+.btn-outline-light:hover{
+  color:#546FEB;
+}
+.btn:active{
+  color:#546FEB;
+}
+.quiz{
+  background-color:#546FEB;
+}
+.quiz-bubble{
+  border:5px solid #FCF7F1;
+  color:#FCF7F1;
+  background:#546FEB;
+  transition: all 0.15s ease-out 20ms;
+}
+.quiz-bubble:hover{
+  border:5px solid #FCF7F1;
+  color:#546FEB;
+  background:#FCF7F1;
+}
+.triangle-border:after {
+  content:"";
+  position:absolute;
+  bottom:-13px; /* value = - border-top-width - border-bottom-width */
+  left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+  border-width:13px 13px 0;
+  border-style:solid;
+  border-color:#546FEB transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+  transition:all 0.15s ease-out 20ms;
+}
+.triangle-border:hover.triangle-border:after{
+  content:"";
+  position:absolute;
+  bottom:-13px; /* value = - border-top-width - border-bottom-width */
+  left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+  border-width:13px 13px 0;
+  border-style:solid;
+  border-color:#FCF7F1 transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+.section-title{
+  font-size:40px;
 }
 .navbar{
   color:#2B2B2B;
@@ -27,6 +79,12 @@ body{
 }
 .category:hover{
   color:#FCF7F1;
+}
+#do{
+  background-color:#06D6A0;
+}
+#dont{
+  background-color:#54C6EB;
 }
 .side-colors{
   overflow:hidden;
